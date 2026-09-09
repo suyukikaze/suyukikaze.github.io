@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal website and research portfolio of Su Tong." />
+  <title>Su Tong | Electronic Information Engineering</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function () {
+      var theme = "dark";
+      try {
+        theme = localStorage.getItem("theme") || "dark";
+      } catch (e) {}
+      document.documentElement.setAttribute("data-theme", theme === "light" ? "light" : "dark");
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip.link">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">ST</span>
+      <span class="brand-name" data-i18n="name">Su Tong</span>
+    </a>
+    <div class="header-actions">
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" data-nav-toggle>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+        <ul class="nav-list" id="nav-list" data-nav-list>
+          <li><a href="#profile" data-nav-link data-i18n="nav.profile">Profile</a></li>
+          <li><a href="#research" data-nav-link data-i18n="nav.research">Research</a></li>
+          <li><a href="#work" data-nav-link data-i18n="nav.work">Work</a></li>
+          <li><a href="#projects" data-nav-link data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#competitions" data-nav-link data-i18n="nav.competitions">Competitions</a></li>
+          <li><a href="#skills" data-nav-link data-i18n="nav.skills">Skills</a></li>
+          <li><a href="#community" data-nav-link data-i18n="nav.community">Community</a></li>
+          <li><a href="#contact" data-nav-link data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch language">
+        <svg class="lang-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"></circle>
+          <path d="M3 12h18"></path>
+          <path d="M12 3a14 14 0 0 1 0 18"></path>
+          <path d="M12 3a14 14 0 0 0 0 18"></path>
+        </svg>
+        <span data-lang-label>中文</span>
+      </button>
+      <button class="lang-toggle theme-toggle" type="button" data-theme-toggle aria-label="Switch to light theme">
+        <svg class="lang-icon theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z"></path>
+        </svg>
+        <span data-theme-label>浅色</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-eyebrow">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span data-i18n="hero.eyebrow">Undergraduate Researcher · Beijing, China</span>
+      </div>
+      <h1 class="hero-title" data-i18n="name">Su Tong</h1>
+      <p class="hero-subtitle">
+        <span data-i18n="hero.subtitle.1">Electronic Information Engineering</span>
+        <span class="hero-slash" aria-hidden="true">/</span>
+        <span data-i18n="hero.subtitle.2">AI-Assisted Scientific Computing</span>
+        <span class="hero-slash" aria-hidden="true">/</span>
+        <span data-i18n="hero.subtitle.3">Human–AI Collaboration</span>
+      </p>
+      <p class="hero-lede" data-i18n="hero.lede">
+        I design software systems and computational methods that make scientific work more
+        reproducible, collaborative, and useful in practice.
+      </p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#contact" data-i18n="hero.action.contact">Get in touch</a>
+        <a class="button button-ghost" href="#work" data-i18n="hero.action.work">View my work</a>
+      </div>
+      <div class="hero-meta">
+        <span data-i18n="hero.meta.email">Email</span>
+        <span data-i18n="hero.meta.github">GitHub</span>
+        <span data-i18n="hero.meta.scholar">Scholar</span>
+      </div>
+    </section>
+
+    <section class="section" id="profile" data-section>
+      <div class="section-head">
+        <span class="section-index">01</span>
+        <span class="section-label" data-i18n="profile.label">Profile</span>
+      </div>
+      <div class="section-grid">
+        <h2 class="section-title" data-i18n="profile.title">A research-minded engineer.</h2>
+        <div class="section-body">
+          <p data-i18n="profile.p1">
+            I work where electronic information engineering meets scientific computing. My focus is on building
+            systems and tooling that lower the cost of experimentation: readable code, reproducible
+            pipelines, and interfaces that help people understand and trust their results.
+          </p>
+          <p data-i18n="profile.p2">
+            Through modeling, prototyping, and measurement, I aim to turn research ideas into
+            maintainable software that others can actually use.
+          </p>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <h3 class="card-title" data-i18n="education.title">Education</h3>
+        <div class="edu-row">
+          <div>
+            <h4 class="edu-school" data-i18n="education.school">China University of Geosciences (Beijing)</h4>
+            <p class="edu-degree" data-i18n="education.degree">B.Eng. in Electronic Information Engineering</p>
+          </div>
+          <div class="edu-dates">
+            <span data-i18n="education.dates.present">2023 – 2027</span>
+            <span data-i18n="education.dates.graduation">Expected graduation: 2027</span>
+          </div>
+        </div>
+        <div class="edu-detail">
+          <div>
+            <h5 class="detail-label" data-i18n="education.coursework.label">Relevant coursework</h5>
+            <p class="detail-value" data-i18n="education.coursework.value">
+              Circuit Analysis Fundamentals · Analog &amp; Digital Electronics · Digital Signal Processing ·
+              Object-Oriented Programming · Data Structures &amp; Algorithms · Communication Principles
+            </p>
+          </div>
+          <div>
+            <h5 class="detail-label" data-i18n="education.languages.label">Languages</h5>
+            <p class="detail-value" data-i18n="education.languages.value">CET-4: 519 · CET-6: 479</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="research" data-section>
+      <div class="section-head">
+        <span class="section-index">02</span>
+        <span class="section-label" data-i18n="research.label">Research</span>
+      </div>
+      <h2 class="section-title" data-i18n="research.title">Research interests</h2>
+      <p class="section-intro" data-i18n="research.intro">
+        Directions that connect software engineering, machine learning, and reproducible
+        scientific computing.
+      </p>
+
+      <div class="research-grid">
+        <article class="research-card" data-reveal>
+          <span class="research-code">SE-01</span>
+          <h3 data-i18n="research.se.title">Intelligent Software Systems</h3>
+          <p data-i18n="research.se.desc">
+            Building developer tools, automation pipelines, and user-facing systems that reason
+            about code and configuration.
+          </p>
+          <dl class="research-facts">
+            <div><dt data-i18n="label.methods">Methods</dt><dd data-i18n="research.se.methods">Agent workflows · Tooling · Systems design</dd></div>
+            <div><dt data-i18n="label.tools">Tools</dt><dd>Python · TypeScript · Node.js</dd></div>
+            <div><dt data-i18n="label.related">Related</dt><dd data-i18n="research.se.related">AI-assisted development environments</dd></div>
+          </dl>
+        </article>
+
+        <article class="research-card" data-reveal>
+          <span class="research-code">SC-02</span>
+          <h3 data-i18n="research.sc.title">Scientific Computing &amp; Simulation</h3>
+          <p data-i18n="research.sc.desc">
+            Numerical methods, signal processing, and simulation pipelines for physical and
+            engineering models.
+          </p>
+          <dl class="research-facts">
+            <div><dt data-i18n="label.methods">Methods</dt><dd data-i18n="research.sc.methods">FFT · Optimization · Transfer matrices</dd></div>
+            <div><dt data-i18n="label.tools">Tools</dt><dd>NumPy · SciPy · Matplotlib</dd></div>
+            <div><dt data-i18n="label.related">Related</dt><dd data-i18n="research.sc.related">Model-based parameter estimation</dd></div>
+          </dl>
+        </article>
+
+        <article class="research-card" data-reveal>
+          <span class="research-code">ML-03</span>
+          <h3 data-i18n="research.ml.title">Data Analysis &amp; Machine Learning</h3>
+          <p data-i18n="research.ml.desc">
+            Building reliable pipelines for cleaning, modeling, and evaluating structured data at
+            practical scale.
+          </p>
+          <dl class="research-facts">
+            <div><dt data-i18n="label.methods">Methods</dt><dd data-i18n="research.ml.methods">Classification · Regression · Evaluation</dd></div>
+            <div><dt data-i18n="label.tools">Tools</dt><dd>Pandas · scikit-learn · Jupyter</dd></div>
+            <div><dt data-i18n="label.related">Related</dt><dd data-i18n="research.ml.related">Reproducible data workflows</dd></div>
+          </dl>
+        </article>
+
+        <article class="research-card" data-reveal>
+          <span class="research-code">AI-04</span>
+          <h3 data-i18n="research.ai.title">Human–AI Collaboration</h3>
+          <p data-i18n="research.ai.desc">
+            Studying how people work with language models, agents, and automation to do better
+            research and engineering.
+          </p>
+          <dl class="research-facts">
+            <div><dt data-i18n="label.methods">Methods</dt><dd data-i18n="research.ai.methods">Prompting · Agent design · Evaluation</dd></div>
+            <div><dt data-i18n="label.tools">Tools</dt><dd>ChatGPT · Codex · Claude · DeepSeek</dd></div>
+            <div><dt data-i18n="label.related">Related</dt><dd data-i18n="research.ai.related">Research workflow notes</dd></div>
+          </dl>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="work" data-section>
+      <div class="section-head">
+        <span class="section-index">03</span>
+        <span class="section-label" data-i18n="work.label">Work</span>
+      </div>
+      <h2 class="section-title" data-i18n="work.title">Publications</h2>
+
+      <div class="work-list">
+        <p class="work-none" data-i18n="work.none">暂无发表论文。</p>
+      </div>
+    </section>
+
+    <section class="section" id="projects" data-section>
+      <div class="section-head">
+        <span class="section-index">04</span>
+        <span class="section-label" data-i18n="projects.label">Projects</span>
+      </div>
+      <h2 class="section-title" data-i18n="projects.title">Selected projects</h2>
+
+      <div class="project-grid">
+        <article class="project-card" data-reveal>
+          <div class="project-visual project-visual-image" aria-hidden="true">
+            <img src="project/BrainFlow_System.png" alt="BrainFlow EEG Analysis System dashboard" loading="lazy" />
+          </div>
+          <h3 data-i18n="projects.p5.title">BrainFlow EEG Analysis System</h3>
+          <p class="project-role" data-i18n="projects.p5.role">Storage &amp; data management lead</p>
+          <p data-i18n="projects.p5.desc">
+            A national-level innovation project (2025–2026) with a five-person team: a real-time EEG
+            acquisition and analytics platform. I owned the storage module — auto-save front-end
+            data with session metadata into SQLite, scan signal quality to compute valid-data ratio
+            and tag sessions, and expose a filterable history-query list API.
+          </p>
+          <div class="tag-row">
+            <span>Python</span>
+            <span>SQLite</span>
+            <span>CSV</span>
+            <span>Flask</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="competitions" data-section>
+      <div class="section-head">
+        <span class="section-index">05</span>
+        <span class="section-label" data-i18n="competitions.label">Competitions</span>
+      </div>
+      <h2 class="section-title" data-i18n="competitions.title">Competition achievements</h2>
+      <p class="section-intro" data-i18n="competitions.intro">
+        Awards and honors from national and provincial contests. Click any certificate
+        to view it in full size.
+      </p>
+
+      <div class="cert-timeline">
+        <h3 class="timeline-title" data-i18n="timeline.title">Award timeline</h3>
+        <ol class="timeline-list">
+          <li class="timeline-entry" data-reveal>
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <span class="timeline-year">2024</span>
+              <ul class="timeline-awards">
+                <li data-i18n="tl.y2024.1">Group Programming Ladder Tournament · National Successful Participation</li>
+                <li data-i18n="tl.y2024.2">Lanqiao Cup · C/C++ Group A Provincial Third Prize</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline-entry" data-reveal>
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <span class="timeline-year">2025</span>
+              <ul class="timeline-awards">
+                <li data-i18n="tl.y2025.1">Lanqiao Cup · C/C++ Group A Provincial Second Prize</li>
+                <li data-i18n="tl.y2025.2">Group Programming Ladder Tournament · National Team Third Prize</li>
+                <li data-i18n="tl.y2025.3">Shuwei Cup Modeling Challenge · Honorable Mention</li>
+                <li data-i18n="tl.y2025.4">Campus AI Algorithm Elite Contest · Provincial Excellence Award</li>
+                <li data-i18n="tl.y2025.5">Baidu Star Programming Contest · Provincial Bronze Award</li>
+                <li data-i18n="tl.y2025.6">RAICOM Robotics Developer Contest · Third Prize</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline-entry" data-reveal>
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <span class="timeline-year">2026</span>
+              <ul class="timeline-awards">
+                <li data-i18n="tl.y2026.1">Group Programming Ladder Tournament · National Team Second Prize</li>
+                <li data-i18n="tl.y2026.2">Group Programming Ladder Tournament · Popularization First Prize</li>
+                <li data-i18n="tl.y2026.3">Mathematical Contest in Modeling · Successful Participant</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="cert-grid" id="cert-grid">
+        <button class="cert-card" type="button" data-reveal data-cert data-cert-full="certificates/full/cert-01.jpg" data-cert-pdf="images/AIC2025省级选拔赛优秀奖.pdf" aria-haspopup="dialog">
+          <figure class="cert-media">
+            <img src="certificates/thumb/cert-01.jpg" alt="AIC 2025 Global Campus AI Algorithm Elite Contest - provincial selection, Excellence Award" loading="lazy" />
+          </figure>
+          <div class="cert-body">
+            <span class="cert-tag" data-i18n="cert01.level">Provincial Excellence Award</span>
+            <h3 data-i18n="cert01.title">Campus AI Algorithm Elite Contest</h3>
+            <p class="cert-meta" data-i18n="cert01.meta">2025 · Provincial selection</p>
+          </div>
+        </button>
+
+        <button class="cert-card" type="button" data-reveal data-cert data-cert-full="certificates/full/cert-02.jpg" data-cert-pdf="images/天梯赛2024国赛成功参赛奖.pdf" aria-haspopup="dialog">
+          <figure class="cert-media">
+            <img src="certificates/thumb/cert-02.jpg" alt="2024 Group Programming Ladder Tournament, national final - Successful Participation Award" loading="lazy" />
+          </figure>
+          <div class="cert-body">
+            <span class="cert-tag" data-i18n="cert02.level">Successful Participation</span>
+            <h3 data-i18n="cert02.title">Group Programming Ladder Tournament</h3>
+            <p class="cert-meta" data-i18n="cert02.meta">2024 · National final</p>
+          </div>
+        </button>
+
+        <button class="cert-card" type="button" data-reveal data-cert data-cert-full="certificates/full/cert-03.jpg" data-cert-pdf="images/天梯赛2025国赛团队三等奖.pdf" aria-haspopup="dialog">
+          <figure class="cert-media">
+            <img src="certificates/thumb/cert-03.jpg" alt="2025 Group Programming Ladder Tournament, national final - Team Third Prize" loading="lazy" />
+          </figure>
+          <div class="cert-body">
+            <span class="cert-tag" data-i18n="cert03.level">Team Third Prize</span>
+            <h3 data-i18n="cert03.title">Group Programming Ladder Tournament</h3>
+            <p class="cert-meta" data-i18n="cert03.meta">2025 · National final</p>
+          </div>
+        </button>
+
+        <button class="cert-card" type="button" data-reveal data-cert data-cert-full="certificates/full/cert-04.jpg" data-cert-pdf="images/天梯赛2026国赛团队二等奖.pdf" aria-haspopup="dialog">
+          <figure class="cert-media">
+            <img src="certificates/thumb/cert-04.jpg" alt="2026 Group Programming Ladder Tournament, national final - Team Second Prize" loading="lazy" />
+          </figure>
+          <div class="cert-body">
+            <span class="cert-tag" data-i18n="cert04.level">Team Second Prize</span>
+            <h3 data-i18n="cert04.title">Group Programming Ladder Tournament</h3>
+            <p class="cert-meta" data-i18n="cert04.meta">2026 · National final</p>
+          </div>
+        </button>
+
+        <button class="cert-card" type="button" data-reveal data-cert data-cert-full="certificates/full/cert-05.jpg" data-cert-pdf="images/天梯赛2026普及赛一等奖.pdf" aria-haspopup="dialog">
+          <figure class="cert-media">
+            <img src="certificates/thumb/cert-05.jpg" alt="2026 Group Programming Ladder Tournament - Popularization - First Prize" loading="lazy" />
+          </figure>
+          <div class="cert-body">
+            <span class="cert-tag" data-i18n="cert05.level">First Prize</span>
+            <h3 data-i18n="cert05.title">GPLT · Popularization</h3>
+            <p class="cert-meta" data-i18n="cert05.meta">2026 · Popularization</p>
+          </div>
+        </button>
+
+        <button class="cert-card" type="button" data-reveal data-cert data-cert-full="certificates/full/cert-07.jpg" data-cert-pdf="images/数维杯2025H奖.pdf" aria-haspopup="dialog">
+          <figure class="cert-media">
+            <img src="certificates/thumb/cert-07.jpg" alt="2025 Shuwei Cup International Mathematical Contest in Modeling - Honorable Mention" loading="lazy" />
+          </figure>
+          <div class="cert-body">
+            <span class="cert-tag" data-i18n="cert07.level">Honorable Mention</span>
+            <h3 data-i18n="cert07.title">Shuwei Cup Modeling Challenge</h3>
+            <p class="cert-meta" data-i18n="cert07.meta">2025 · Honorable Mention</p>
+          </div>
+        </button>
+
+        <button class="cert-card is-secondary" type="button" data-reveal data-cert data-cert-full="certificates/full/cert-08.jpg" data-cert-pdf="images/百度之星2025省赛铜奖.pdf" aria-haspopup="dialog">
+          <figure class="cert-media">
+            <img src="certificates/thumb/cert-08.jpg" alt="2025 Baidu Star Programming Contest, provincial round - Bronze Award" loading="lazy" />
+          </figure>
+          <div class="cert-body">
+            <span class="cert-tag" data-i18n="cert08.level">Bronze Award</span>
+            <h3 data-i18n="cert08.title">Baidu Star Programming Contest</h3>
+            <p class="cert-meta" data-i18n="cert08.meta">2025 · Provincial round</p>
+          </div>
+        </button>
+
+        <button class="cert-card is-secondary" type="button" data-reveal data-cert data-cert-full="certificates/full/cert-09.jpg" data-cert-pdf="images/睿抗2025省赛三等奖.pdf" aria-haspopup="dialog">
+          <figure class="cert-media">
+            <img src="certificates/thumb/cert-09.jpg" alt="2025 RAICOM Robotics Developer Contest, programming skills - Third Prize" loading="lazy" />
+          </figure>
+          <div class="cert-body">
+            <span class="cert-tag" data-i18n="cert09.level">Third Prize</span>
+            <h3 data-i18n="cert09.title">RAICOM Robotics Developer Contest</h3>
+            <p class="cert-meta" data-i18n="cert09.meta">2025 · Programming skills</p>
+          </div>
+        </button>
+
+        <button class="cert-card is-secondary" type="button" data-reveal data-cert data-cert-full="certificates/full/cert-10.jpg" data-cert-pdf="images/美赛2026S奖.pdf" aria-haspopup="dialog">
+          <figure class="cert-media">
+            <img src="certificates/thumb/cert-10.jpg" alt="2026 Mathematical Contest in Modeling - Successful Participant" loading="lazy" />
+          </figure>
+          <div class="cert-body">
+            <span class="cert-tag" data-i18n="cert10.level">Successful Participant</span>
+            <h3 data-i18n="cert10.title">Mathematical Contest in Modeling</h3>
+            <p class="cert-meta" data-i18n="cert10.meta">2026 · Successful Participant</p>
+          </div>
+        </button>
+
+        <button class="cert-card is-secondary" type="button" data-reveal data-cert data-cert-full="certificates/full/cert-11.jpg" data-cert-pdf="images/蓝桥杯2024C++A组省赛三等奖.pdf" aria-haspopup="dialog">
+          <figure class="cert-media">
+            <img src="certificates/thumb/cert-11.jpg" alt="2024 Lanqiao Cup software and IT talent contest, C/C++ Group A - Third Prize" loading="lazy" />
+          </figure>
+          <div class="cert-body">
+            <span class="cert-tag" data-i18n="cert11.level">Third Prize</span>
+            <h3 data-i18n="cert11.title">Lanqiao Cup · C/C++ Group A</h3>
+            <p class="cert-meta" data-i18n="cert11.meta">2024 · Provincial</p>
+          </div>
+        </button>
+
+        <button class="cert-card is-secondary" type="button" data-reveal data-cert data-cert-full="certificates/full/cert-12.jpg" data-cert-pdf="images/蓝桥杯2025C++A组省赛二等奖.pdf" aria-haspopup="dialog">
+          <figure class="cert-media">
+            <img src="certificates/thumb/cert-12.jpg" alt="2025 Lanqiao Cup software and IT talent contest, C/C++ Group A - Second Prize" loading="lazy" />
+          </figure>
+          <div class="cert-body">
+            <span class="cert-tag" data-i18n="cert12.level">Second Prize</span>
+            <h3 data-i18n="cert12.title">Lanqiao Cup · C/C++ Group A</h3>
+            <p class="cert-meta" data-i18n="cert12.meta">2025 · Provincial</p>
+          </div>
+        </button>
+      </div>
+
+      <div class="cert-actions">
+        <button class="cert-toggle" type="button" data-cert-toggle aria-expanded="false" aria-controls="cert-grid">
+          展示全部
+        </button>
+      </div>
+    </section>
+
+    <section class="section" id="skills" data-section>
+      <div class="section-head">
+        <span class="section-index">06</span>
+        <span class="section-label" data-i18n="skills.label">Toolkit</span>
+      </div>
+      <h2 class="section-title" data-i18n="skills.title">Technical skills</h2>
+      <p class="section-intro" data-i18n="skills.intro">
+        Tools used across research, simulation, and software projects — without self-assigned
+        proficiency scores.
+      </p>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3 data-i18n="skills.programming">Programming</h3>
+          <ul class="skill-list">
+            <li><span>C++</span><em data-i18n="level.project">Research / Project</em></li>
+            <li><span>Python</span><em data-i18n="level.project">Research / Project</em></li>
+            <li><span>HTML5/CSS3</span><em data-i18n="level.familiar">Familiar</em></li>
+            <li><span>JavaScript</span><em data-i18n="level.familiar">Familiar</em></li>
+            <li><span>Java</span><em data-i18n="level.familiar">Familiar</em></li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 data-i18n="skills.computing">Embedded Development</h3>
+          <ul class="skill-list">
+            <li><span>C51</span><em data-i18n="level.project">Research / Project</em></li>
+            <li><span>STM32</span><em data-i18n="level.project">Research / Project</em></li>
+            <li><span>FPGA</span><em data-i18n="level.familiar">Familiar</em></li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 data-i18n="skills.development">Software Development</h3>
+          <ul class="skill-list">
+            <li><span data-i18n="skills.backend">Backend</span><em data-i18n="level.project">Research / Project</em></li>
+            <li><span data-i18n="skills.web">Frontend</span><em data-i18n="level.project">Research / Project</em></li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 data-i18n="skills.ai">AI-Assisted Work</h3>
+          <ul class="skill-list">
+            <li><span>ChatGPT</span><em data-i18n="level.project">Research / Project</em></li>
+            <li><span>Codex</span><em data-i18n="level.project">Research / Project</em></li>
+            <li><span>Claude Code</span><em data-i18n="level.project">Research / Project</em></li>
+            <li><span>DeepSeek</span><em data-i18n="level.project">Research / Project</em></li>
+            <li><span>Deepseek Harness</span><em data-i18n="level.project">Research / Project</em></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="community" data-section>
+      <div class="section-head">
+        <span class="section-index">07</span>
+        <span class="section-label" data-i18n="community.label">Community</span>
+      </div>
+      <h2 class="section-title" data-i18n="community.title">Leadership &amp; service</h2>
+      <div class="community-list">
+        <article data-reveal>
+          <h3 data-i18n="community.acm.title">Member, University ACM Team</h3>
+          <p data-i18n="community.acm.desc">Represented the university in contests such as the Group Programming Ladder Tournament and CCPC.</p>
+        </article>
+        <article data-reveal>
+          <h3 data-i18n="community.ca.title">Member, Computer Association</h3>
+          <p data-i18n="community.ca.desc">Volunteered to provide computer-related services to classmates in need.</p>
+        </article>
+        <article data-reveal>
+          <h3 data-i18n="community.volunteer.title">Volunteer, Summer Social Practice</h3>
+          <p data-i18n="community.volunteer.desc">Completed 30 hours of volunteer service in community practice.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" data-section>
+      <div class="section-head">
+        <span class="section-index">08</span>
+        <span class="section-label" data-i18n="contact.label">Contact</span>
+      </div>
+      <h2 class="section-title" data-i18n="contact.title">Let's build something useful.</h2>
+      <p class="section-intro" data-i18n="contact.intro">
+        For collaboration, research discussion, or technical opportunities, reach me by email or
+        GitHub.
+      </p>
+      <div class="contact-layout">
+        <a class="contact-primary" href="mailto:su13103725575@163.com">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          </span>
+          <span data-i18n="contact.email">Email me</span>
+        </a>
+        <a class="contact-secondary" href="https://github.com/suyukikaze" target="_blank" rel="noreferrer">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-1.5 6-6a4.7 4.7 0 0 0-1.3-3.3A4.4 4.4 0 0 0 18.5 2S17.6 1.7 15 3.5a13 13 0 0 0-6 0C6.4 1.7 5.5 2 5.5 2a4.4 4.4 0 0 0-.2 3.2A4.7 4.7 0 0 0 4 8.5c0 4.5 3 6 6 6a4.8 4.8 0 0 0-1 3.5v4"/><path d="M9 18c-3 .5-4-2-5-2"/></svg>
+          </span>
+          <span>GitHub</span>
+        </a>
+      </div>
+
+      <form class="contact-form" action="https://formsubmit.co/su13103725575@163.com" method="POST">
+        <input type="hidden" name="_subject" value="New message from your portfolio site" />
+        <input type="hidden" name="_captcha" value="true" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+        <div class="contact-form-row">
+          <label>
+            <span data-i18n="contact.form.name">Your name</span>
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            <span data-i18n="contact.form.email">Your email</span>
+            <input type="email" name="email" required />
+          </label>
+        </div>
+        <label>
+          <span data-i18n="contact.form.subject">Subject</span>
+          <input type="text" name="subject" />
+        </label>
+        <label>
+          <span data-i18n="contact.form.message">Message</span>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="contact-submit" type="submit" data-form-submit>
+          <span data-i18n="contact.form.submit">Send message</span>
+        </button>
+        <p class="contact-form-status" data-form-status aria-live="polite"></p>
+      </form>
+
+      <p class="contact-note" data-i18n="contact.note">
+        Fill in the form and it will be delivered to my inbox, or reach me by email or GitHub.
+      </p>
+    </section>
+  </main>
+
+  <div class="lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-label="Certificate viewer">
+    <div class="lightbox-backdrop" data-lightbox-close></div>
+    <figure class="lightbox-figure" role="document">
+      <img class="lightbox-img" data-lightbox-img alt="Certificate" />
+      <figcaption class="lightbox-caption" data-lightbox-caption></figcaption>
+    </figure>
+    <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <a class="lightbox-open" data-lightbox-open href="#" target="_blank" rel="noreferrer" data-i18n="cert.open">Open certificate PDF</a>
+  </div>
+
+  <footer class="site-footer">
+    <p>© <span data-year></span> <span data-i18n="name">Su Tong</span> · <span data-i18n="footer.built">Built as a static portfolio</span></p>
+    <a href="#top" data-i18n="footer.top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

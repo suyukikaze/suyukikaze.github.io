@@ -1,0 +1,90 @@
+[
+  {
+    "slug": "cert-01",
+    "title": "AIC2025省级选拔赛优秀奖",
+    "pdfname": "AIC2025省级选拔赛优秀奖.pdf",
+    "pages": 1,
+    "thumb": "certificates/thumb/cert-01.jpg",
+    "full": "certificates/full/cert-01.jpg"
+  },
+  {
+    "slug": "cert-02",
+    "title": "天梯赛2024国赛成功参赛奖",
+    "pdfname": "天梯赛2024国赛成功参赛奖.pdf",
+    "pages": 1,
+    "thumb": "certificates/thumb/cert-02.jpg",
+    "full": "certificates/full/cert-02.jpg"
+  },
+  {
+    "slug": "cert-03",
+    "title": "天梯赛2025国赛团队三等奖",
+    "pdfname": "天梯赛2025国赛团队三等奖.pdf",
+    "pages": 1,
+    "thumb": "certificates/thumb/cert-03.jpg",
+    "full": "certificates/full/cert-03.jpg"
+  },
+  {
+    "slug": "cert-04",
+    "title": "天梯赛2026国赛团队二等奖",
+    "pdfname": "天梯赛2026国赛团队二等奖.pdf",
+    "pages": 1,
+    "thumb": "certificates/thumb/cert-04.jpg",
+    "full": "certificates/full/cert-04.jpg"
+  },
+  {
+    "slug": "cert-05",
+    "title": "天梯赛2026普及赛一等奖",
+    "pdfname": "天梯赛2026普及赛一等奖.pdf",
+    "pages": 1,
+    "thumb": "certificates/thumb/cert-05.jpg",
+    "full": "certificates/full/cert-05.jpg"
+  },
+  {
+    "slug": "cert-07",
+    "title": "数维杯2025H奖",
+    "pdfname": "数维杯2025H奖.pdf",
+    "pages": 1,
+    "thumb": "certificates/thumb/cert-07.jpg",
+    "full": "certificates/full/cert-07.jpg"
+  },
+  {
+    "slug": "cert-08",
+    "title": "百度之星2025省赛铜奖",
+    "pdfname": "百度之星2025省赛铜奖.pdf",
+    "pages": 1,
+    "thumb": "certificates/thumb/cert-08.jpg",
+    "full": "certificates/full/cert-08.jpg"
+  },
+  {
+    "slug": "cert-09",
+    "title": "睿抗2025省赛三等奖",
+    "pdfname": "睿抗2025省赛三等奖.pdf",
+    "pages": 1,
+    "thumb": "certificates/thumb/cert-09.jpg",
+    "full": "certificates/full/cert-09.jpg"
+  },
+  {
+    "slug": "cert-10",
+    "title": "美赛2026S奖",
+    "pdfname": "美赛2026S奖.pdf",
+    "pages": 1,
+    "thumb": "certificates/thumb/cert-10.jpg",
+    "full": "certificates/full/cert-10.jpg"
+  },
+  {
+    "slug": "cert-11",
+    "title": "蓝桥杯2024C++A组省赛三等奖",
+    "pdfname": "蓝桥杯2024C++A组省赛三等奖.pdf",
+    "pages": 1,
+    "thumb": "certificates/thumb/cert-11.jpg",
+    "full": "certificates/full/cert-11.jpg"
+  },
+  {
+    "slug": "cert-12",
+    "title": "蓝桥杯2025C++A组省赛二等奖",
+    "pdfname": "蓝桥杯2025C++A组省赛二等奖.pdf",
+    "pages": 1,
+    "thumb": "certificates/thumb/cert-12.jpg",
+    "full": "certificates/full/cert-12.jpg"
+  }
+]
