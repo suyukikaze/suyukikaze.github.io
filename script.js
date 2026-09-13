@@ -157,6 +157,9 @@
     "cert12.level": { en: "Second Prize", zh: "二等奖" },
     "cert12.title": { en: "Lanqiao Cup · C/C++ Group A", zh: "蓝桥杯 · C/C++ A组" },
     "cert12.meta": { en: "2025 · Provincial", zh: "2025 · 省赛" },
+    "cert13.level": { en: "Second Prize", zh: "二等奖" },
+    "cert13.title": { en: "Lanqiao Cup · C/C++ Group A", zh: "蓝桥杯 · C/C++ A组" },
+    "cert13.meta": { en: "2026 · Provincial", zh: "2026 · 省赛" },
 
     "skills.label": { en: "Toolkit", zh: "技能" },
     "skills.title": { en: "Technical skills", zh: "技术技能" },
@@ -177,6 +180,7 @@
     "tl.y2026.1": { en: "Group Programming Ladder Tournament · National Team Second Prize", zh: "团体程序设计天梯赛 · 全国总决赛团队二等奖" },
     "tl.y2026.2": { en: "Group Programming Ladder Tournament · Popularization First Prize", zh: "团体程序设计天梯赛 · 普及赛一等奖" },
     "tl.y2026.3": { en: "Mathematical Contest in Modeling · Successful Participant", zh: "美国大学生数学建模竞赛 · 成功参赛奖" },
+    "tl.y2026.4": { en: "Lanqiao Cup · C/C++ Group A Provincial Second Prize", zh: "蓝桥杯 · C/C++ A组 省赛二等奖" },
     "tl.y2025.1": { en: "Lanqiao Cup · C/C++ Group A Provincial Second Prize", zh: "蓝桥杯 · C/C++ A组 省赛二等奖" },
     "tl.y2025.2": { en: "Group Programming Ladder Tournament · National Team Third Prize", zh: "团体程序设计天梯赛 · 全国总决赛团队三等奖" },
     "tl.y2025.3": { en: "Shuwei Cup Modeling Challenge · Honorable Mention", zh: "数维杯国际数学建模挑战赛 · H奖" },

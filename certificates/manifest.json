@@ -86,5 +86,13 @@
     "pages": 1,
     "thumb": "certificates/thumb/cert-12.jpg",
     "full": "certificates/full/cert-12.jpg"
+  },
+  {
+    "slug": "cert-13",
+    "title": "蓝桥杯2026C++A组省赛二等奖",
+    "pdfname": "蓝桥杯2026C++A组省赛二等奖.pdf",
+    "pages": 1,
+    "thumb": "certificates/thumb/cert-13.jpg",
+    "full": "certificates/full/cert-13.jpg"
   }
 ]
